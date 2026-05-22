@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Главная страница</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!--Подключение библиотек-->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,7 @@
     <div class="menu-grid-container">
         <div class="el-1">
             <div class="nav_pulldown">
-                <a id="list-flowers" href="#" class= "nav_link">Цветы</a>
+                <a id="list-menu" href="#" class= "nav_link"><img src="/img/icons/menu.svg" alt="menu"></a>
                 <div id="pulldown" class="pulldown_menu">
                     <a id="rose" href="rose.html" class= "pulldown_item">Розы</a> 
                     <a id="lilies" href="lilies.html" class= "pulldown_item">Лилии</a> 
@@ -24,21 +25,16 @@
 	    </div>
         <div class="el-2">
             <div class="nav_pulldown">
-                (Место для 2-го <br>выпадающего меню)
+                a
             </div>
 	    </div>
         <div class="el-3">
             <div class="nav_pulldown">
-                (Место для 3-го <br>выпадающего меню)
-            </div>
-        </div>
-        <div class="el-3">
-            <div class="nav_pulldown">
-                (Место для 3-го <br>выпадающего меню)
+                s
             </div>
         </div>
     </div>
-    <script src="menu.js"></script>
+    <script src="/js/menu.js"></script>
 
     <!--СЛАЙДШОУ-->
     <div class="slider">
@@ -49,7 +45,7 @@
 
         <!--затемнение-->
         <div class="overlay"></div>
-
+        </a>
         <!--контент-->
         <div class="content">
             <h1>Stitched Worlds</h1>
@@ -57,8 +53,16 @@
             прибрежных деревнях и лесах...</p>
             <button onclick="window.location.href='https://yandex.ru'">К коллекциям</button>   
         </div>
-        </a>
     </div>
     <script src="/js/SlideShow.js"></script>
+
+    <!--АНИМАЦИЯ ТЕКСТА-->
+    <section class="running-text-section">
+        <div class="running-text">
+            ✦ Сотканные миры ✦ Магические нити ✦ Фэнтези, созданное вручную ✦ Уникальные артефакты ✦ Маленькие коллекции ✦
+        </div>
+    </section>
+
+
 </body>
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--МЕНЮ-->
+    <div class="menu-grid-container">
+        <div class="el-1">
+            <div class="nav_pulldown">
+                <a id="list-flowers" href="#" class= "nav_link">Цветы</a>
+                <div id="pulldown" class="pulldown_menu">
+                    <a id="rose" href="rose.html" class= "pulldown_item">Розы</a> 
+                    <a id="lilies" href="lilies.html" class= "pulldown_item">Лилии</a> 
+                <a id="chrys" href="chrys.html" class= "pulldown_item">Хризантемы</a> 
+            </div>
+	        </div>
+	    </div>
+        <div class="el-2">
+            <div class="nav_pulldown">
+                (Место для 2-го <br>выпадающего меню)
+            </div>
+	    </div>
+        <div class="el-3">
+            <div class="nav_pulldown">
+                (Место для 3-го <br>выпадающего меню)
+            </div>
+        </div>
+        <div class="el-3">
+            <div class="nav_pulldown">
+                (Место для 3-го <br>выпадающего меню)
+            </div>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+
+    <!--СЛАЙДШОУ-->
+    <div class="slider">
+        <a id="slideLink" href="#" target="_blank"><!-- бланк - в новой вкладке открытие
+        дивы потому что бекграунд а не имг-->
+        <div id="slide1" class="slide"></div> 
+        <div id="slide2" class="slide"></div>
+
+        <!--затемнение-->
+        <div class="overlay"></div>
+
+        <!--контент-->
+        <div class="content">
+            <h1>Stitched Worlds</h1>
+            <p>Вязаные артефакты, найденные в фейских планах,<br>
+            прибрежных деревнях и лесах...</p>
+            <button onclick="window.location.href='https://yandex.ru'">К коллекциям</button>   
+        </div>
+        </a>
+    </div>
+    <script src="/js/SlideShow.js"></script>
+
+    <!--АНИМАЦИЯ ТЕКСТА-->
+    <section class="running-text-section">
+        <div class="running-text">
+            ✦ Stitched Worlds ✦ Magical Threads ✦ Handmade Fantasy ✦ Unique Artifacts ✦ Small Collections ✦
+    </section>
+
+</body>
+</html>
