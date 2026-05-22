@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+}
+
+/* МЕНЮ */
+.menu-grid-container {
+    display: grid;
+    grid-template-rows: 110px  500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vw;
+    z-index: 0;
+}
+
+.el-1, .el-2, .el-3, .el-4 {
+    text-align: center;
+}
+
+.el-1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.el-2 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+.el-3 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+.el-4 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+	grid-column-end: 4;
+}
+* {
+	text-decoration: none;
+	font-family:arial;
+}
+.pulldown_menu {
+	visibility: hidden;
+	padding: 10px;
+}
+.nav_link {
+	font-size: 20px;
+	font-weight:bold;
+	color: navy;
+}
+.show.pulldown_menu {
+	visibility: visible;
+	
+}
+.nav_pulldown {
+	padding:10px;
+}
+.pulldown_item {
+	display: block;
+	background: #9fc;
+	color: navy;
+	width: 100px;
+	text-align: center;
+    padding: 3px;
+	font-size: 15px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+a:hover {
+	color: red;	
+}
+
+
+
+#slideLink {
+    display: block;
+    width: 100vw;
+    height: 91vh;
+    color: white;
+}
+
+.slide {
+    position: absolute;
+    inset: 65px 0 0 0;
+    background-repeat: repeat-x;
+    background-size: auto 91vh;
+
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+}
+
+#slide1 {
+    opacity: 1;
+}
+#slide2 {
+    opacity: 0;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+
+    z-index: 1;
+}
+
+.content{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1{
+        font-family: "Monsieur La Doulaise", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 98pt;
+        margin: 0;
+    }
+    p{
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 16pt;
+        margin: 0;
+        margin-bottom: 60px;
+        margin-top: -30px;
+    }
+    button{
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16pt;
+        background-color: #D9D9D9;
+        color: #193A03;
+        padding: 14px 60px;
+        border: none;
+        border-radius: 50px;
+    }
+}
