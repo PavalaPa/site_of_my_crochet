@@ -332,3 +332,12 @@ body, html {
     min-height: 40vh;
     width: 100vw;
 }
+
+
+
+
+
+.fade {
+    opacity: 0;
+    transform: translateY(60px);
+}
