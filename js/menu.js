@@ -1,15 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-	const ListMenu = document.querySelector('#list-menu');
-	const Pulldown=document.querySelector('#pulldown');
+	const dropdowns  = document.querySelectorAll('.dropdown');
 	
-	ListMenu.addEventListener('click',() => {
-		Pulldown.classList.toggle('show');
+	dropdowns.forEach(dropdown => {
+		const button = dropdown.querySelector('.dropbtn');
+        const menu = dropdown.querySelector('.dropdown-content');
+
+		button.addEventListener('click',() => {
+			dropdown.classList.toggle('show');
+
+			// закрыть все остальные
+			dropdowns.forEach(d => {
+				if (d !== dropdown) {
+					d.classList.remove('show');
+				}
+			});
+		});
 	});
 
 	window.addEventListener('click', (e) => {
 		const target=e.target;
-		if(!target.closest('#pulldown')&&!target.closest('#list-menu')){
-			Pulldown.classList.remove('show');
+		if(!target.closest('.dropdown')&&!target.closest('.menu')){
+			dropdowns.forEach(d => d.classList.remove('show'));
 		}
 	})	
 });

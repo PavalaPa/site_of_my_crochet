@@ -12,28 +12,41 @@
 </head>
 <body>
     <!--МЕНЮ-->
-    <div class="menu-grid-container">
-        <div class="el-1">
-            <div class="nav_pulldown">
-                <a id="list-menu" href="#" class= "nav_link"><img src="/img/icons/menu.svg" alt="menu"></a>
-                <div id="pulldown" class="pulldown_menu">
-                    <a id="rose" href="rose.html" class= "pulldown_item">Розы</a> 
-                    <a id="lilies" href="lilies.html" class= "pulldown_item">Лилии</a> 
-                <a id="chrys" href="chrys.html" class= "pulldown_item">Хризантемы</a> 
+    <header class="menu">
+        <div class="left">
+            <div class="dropdown">
+                <button class="dropbtn"><img src="/img/icons/menu.svg" alt="menu"></button>
+                <div class="dropdown-content">
+                    <a href="#collections">Миры лавки</a>
+                    <a href="#new">Новые находки</a>
+                    <a href="#reviews">Записки странников</a>
+                    <a href="#order">Создать артефакт на заказ</a>
+                    <a href="#socials">Хроники торговца</a>
+                    <a href="#subscribe">Получать вести из лавки</a>
+                </div>
             </div>
-	        </div>
-	    </div>
-        <div class="el-2">
-            <div class="nav_pulldown">
-                a
-            </div>
-	    </div>
-        <div class="el-3">
-            <div class="nav_pulldown">
-                s
+
+            <!--ЯЗЫК-->
+            <div class="dropdown">
+                <button class="dropbtn">ru</button>
+
+                <div class="dropdown-content">
+                    <a href="main_page_en.html">en</a>
+                    <a href="main_page_zh.html">zh</a>
+                </div>
             </div>
         </div>
-    </div>
+
+        <div  class="right">
+            <!--ЛЮБИМОЕ-->
+            <div class="dropdown">
+                <button class="dropbtn"><img src="/img/icons/favorite.svg" alt="fav"></button>
+                <div class="dropdown-content">
+                    <a href="#">Пусто</a>
+                </div>
+            </div>
+        </div>
+    </header>
     <script src="/js/menu.js"></script>
 
     <!--СЛАЙДШОУ-->
@@ -62,6 +75,44 @@
             ✦ Сотканные миры ✦ Магические нити ✦ Фэнтези, созданное вручную ✦ Уникальные артефакты ✦ Маленькие коллекции ✦
         </div>
     </section>
+
+    <section id="collections" class="collections container">
+        <h2>Миры лавки</h2>
+    </section>
+
+    <section id="new" class="new container">
+        <h2>Новые находки</h2>
+    </section>
+
+    <section id="reviews" class="reviews container">
+        <h2 style="grid-column: 1 / 13;">Записки странников</h2>
+
+        <!-- ГАЛЕРЕЯ -->
+        <div class="gallery" style="grid-column: 1 / 13;">
+            <div class="gallery-track" id="track"></div>
+            <div class="gallery-controls">
+                <button id="prevBtn"><</button>
+                <button id="nextBtn">></button>
+            </div>
+        </div>
+    </section>
+    <script src="/js/ReviewsGallery.js"></script>
+
+    <section id="order" class="order container">
+        <h2>Создать артефакт на заказ</h2>
+    </section>
+
+    <section id="socials" class="socials container">
+        <h2>Хроники торговца</h2>
+    </section>
+
+    <section id="subscribe" class="subscribe container">
+        <h2>Получать вести из лавки</h2>
+    </section>
+
+    <footer class="footer container">
+        <h2>Подвал</h2>
+    </footer>
 
 
 </body>

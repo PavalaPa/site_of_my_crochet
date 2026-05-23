@@ -1,80 +1,83 @@
-body {
+body, html {
     margin: 0;
     width: 100vw;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16pt;
+    color: #193A03;
+    max-width: 100vw;
+
+    /* overflow-x: hidden; */
 }
 
 /* МЕНЮ */
-.menu-grid-container {
+.menu {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
-
+    height: 52px;
     background: white;
-    
-    display: grid;
-    grid-template-rows: 52px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1vw;
-}
 
-.el-1, .el-2, .el-3, .el-4 {
-    text-align: center;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 20px;
 }
+.dropdown {
+    position: relative;
+}
+.dropbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
 
-.el-1 {
-    grid-row-start: 1;
-    grid-column-start: 1;
-}
-.el-2 {
-    grid-row-start: 1;
-    grid-column-start: 2;
-}
-.el-3 {
-    grid-row-start: 1;
-    grid-column-start: 3;
-}
-* {
-	text-decoration: none;
-	font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 800;
     font-style: normal;
     font-size: 16pt;
+    color: #193A03;
 }
-.pulldown_menu {
-	visibility: hidden;
-	padding: 10px;
-}
-.nav_link {
-	font-size: 20px;
-	font-weight:bold;
-	color: navy;
-}
-.show.pulldown_menu {
-	visibility: visible;
-	
-}
-.nav_pulldown {
-	padding:10px;
-}
-.pulldown_item {
-	display: block;
-	background: #9fc;
-	color: navy;
-	width: 100px;
-	text-align: center;
-    padding: 3px;
-	font-size: 15px;
-	border: none;
-	margin-left: auto;
-	margin-right: auto;
-}
-a:hover {
-	color: red;	
+.right .dropdown-content {
+    right: -20px;
+    left: auto;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute; /*относительно родителя*/
+    top: 110%;
+    left: -20px;
+    background: white;
+    min-width: 180px;   
+    width: max-content; 
+}
+.dropdown-content a {
+    display: block;
+    padding: 25px;
+    text-decoration: none;
+    color: #193A03;
+}
+
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+.left {
+    display: flex;
+    gap: 20px;
+}
+
+.right {
+    margin-left: auto;
+
+    display: flex;
+    gap: 20px;
+}
 /* СЛАЙДШОУ */
 
 #slider {
@@ -97,7 +100,7 @@ a:hover {
     position: absolute;
     inset:0;
     background-repeat: repeat-x;
-    background-size: auto 90vh;
+    background-size: auto 91vh;
     height: 90vh;
 
     transition: opacity 1s ease-in-out;
@@ -125,7 +128,7 @@ a:hover {
     z-index: 2;
     text-align: center;
     inset: 0;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -205,4 +208,132 @@ a:hover {
     to {
         transform: translateX(-100%);
     }
+}
+
+
+
+/* ПАРАМЕТРЫ СЕТКИ */
+
+.container {
+    margin: 0;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+    max-width: 100vw;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.collections {
+    background: #F6F1E8;
+    min-height: 80vh;
+}
+
+.new {
+    background: #E8F0E6;
+    min-height: 70vh;
+}
+
+
+
+
+
+
+.reviews {
+    background: #F0E8F3;
+    min-height: 90vh;
+}
+.grid {
+    margin: 0 auto;
+    padding: 0 40px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.gallery-window {
+    overflow: hidden;
+}
+
+.gallery-track {
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+
+    transition: transform 0.5s ease;
+}
+
+.card {
+    grid-column: span 4;
+
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.nick {
+    font-weight: 700;
+    color: #193A03;
+}
+
+.text {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.gallery-controls{
+    display: flex;
+    justify-content: center;
+
+    button{
+        border: none;
+        background: none;
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 20pt;
+        color: #193A03;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+.order {
+    background: #E8EEF3;
+    min-height: 85vh;
+}
+
+.socials {
+    background: #F3F0E8;
+    min-height: 60vh;
+}
+
+.subscribe {
+    background: #E8F3EF;
+    min-height: 65vh;
+}
+
+.footer {
+    background: #193A03;
+    color: white;
+    min-height: 40vh;
+    width: 100vw;
 }
