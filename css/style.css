@@ -243,20 +243,15 @@ body, html {
 .reviews {
     background: #F0E8F3;
     min-height: 90vh;
-}
-.grid {
-    margin: 0 auto;
-    padding: 0 40px;
 
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
+    h2{
+        grid-column: 1 / 13;
+        margin-bottom: 0;
+    }
 }
-
-.gallery-window {
-    overflow: hidden;
+.gallery{
+    grid-column: 1 / 13;
 }
-
 .gallery-track {
     display: grid;
 
@@ -265,21 +260,21 @@ body, html {
 
     transition: transform 0.5s ease;
 }
-
 .card {
-    grid-column: span 4;
+    grid-column: span 4; /*эл охватывает 4 колонки*/
 
     background: white;
     border-radius: 12px;
-    overflow: hidden;
+    overflow: hidden; /*то что не поместилось в контейнер скрыто*/
 }
 .card img {
     width: 100%;
+    height: 500px;
     object-fit: cover;
 }
 
 .card-content {
-    padding: 12px;
+    padding: 10px 20px 20px 20px;
 }
 
 .nick {
@@ -289,7 +284,7 @@ body, html {
 
 .text {
     font-size: 14px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .gallery-controls{
