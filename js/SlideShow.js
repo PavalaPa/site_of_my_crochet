@@ -1,9 +1,8 @@
-const images = [
-    "/img/main_image1.png",
-    "/img/main_image2.png",
-    "/img/main_image3.png"
+const slides = [
+    {image: "/img/main_image1.png", link: "product.html?id=2"},
+    {image: "/img/main_image2.png", link: "product.html?id=4"},
+    {image: "/img/main_image3.png", link: "product.html?id=10"}
 ];
-
 let index = 0;
 let link = document.getElementById("slideLink");  
 let currentSlide = document.getElementById("slide1");
@@ -11,18 +10,18 @@ let nextSlide = document.getElementById("slide2");
 
 //первая картинка
 currentSlide.style.backgroundImage =
-    `url('${images[index]}')`;
+    `url('${slides[index].image}')`;
 
-link.href = images[index]; //СМЕНИ НА НОРМ ССЫЛКИ
+link.href = slides[index].link;
 
 function changeSlide() {
 
-    index = (index + 1) % images.length; //переход к след изображению
+    index = (index + 1) % slides.length; //переход к след изображению
 
     nextSlide.style.backgroundImage =
-        `url('${images[index]}')`;
+        `url('${slides[index].image}')`;
 
-    link.href = images[index]; //ТУТ ТОЖЕ НАДО СМЕНИТЬ ПОТОМ
+    link.href = slides[index].link;
 
     //плавное наложение
     nextSlide.style.opacity = 1;

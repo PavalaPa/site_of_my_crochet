@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     const link = document.createElement("a");
 
-                    link.href = `/product.html?id=${product.id}`;
+                    link.href = `product.html?id=${product.id}`;
 
                     link.textContent = product.name;
 

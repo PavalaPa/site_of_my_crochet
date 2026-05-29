@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let reviews = [];
     const track = document.getElementById("track");
     let index = 0;
-
     //загружаем json
     function loadReviews(){
         $.getJSON('/json/reviews.json', function(data){ //jquery
@@ -46,12 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function update() {
-
+        const visibleCount = getVisibleCount();
         const cards = document.querySelectorAll(".card");
 
         cards.forEach((card, i) => {
 
-            if (i >= index && i < index + 3) { //только три карточки начиная с индекс
+            if (i >= index && i < index + visibleCount) { //только три карточки начиная с индекс
                 card.style.display = "block";
             } else {
                 card.style.display = "none";
@@ -60,7 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.getElementById("nextBtn").addEventListener("click", () => {
-        if (index < reviews.length - 3) {
+        const visibleCount = getVisibleCount();
+        if (index < reviews.length - visibleCount) {
             index++;
             update();
         }
@@ -74,5 +74,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     loadReviews();
+
+    // добавляем ограничения на width
+    function getVisibleCount() {
+
+        if (window.innerWidth <= 900) {
+            return 1;
+        }
+
+        if (window.innerWidth <= 1200) {
+            return 2;
+        }
+
+        return 3;
+    }
 
 });

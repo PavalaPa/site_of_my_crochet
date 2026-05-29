@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const btn = document.getElementById("showMoreBtn");
 
     let collections = [];
-    let visibleCount = 3;
+    let visibleCount = getVisibleCount();
 
     function loadCollections() {
 
@@ -54,9 +54,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     btn.addEventListener("click", () => {
 
-        visibleCount += 3;
+        visibleCount += getVisibleCount();
         render();
     });
+
+    // добавляем ограничения на width
+    function getVisibleCount() {
+
+        if (window.innerWidth <= 900) {
+            return 1;
+        }
+
+        if (window.innerWidth <= 1200) {
+            return 2;
+        }
+
+        return 3;
+    }
 
     loadCollections();
 });
