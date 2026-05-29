@@ -18,7 +18,6 @@ $(window).on("scroll", function () { // выполнение при прокру
                     easing: "swing" //плавное ускорене
                 }
             );
-
             $(this).removeClass("fade"); //чтобы не было повторной анимации
         }
     });

@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Старинная рыболовная сеть",
+        "price_ru": 6500,
+        "collection_id": 1,
+        "image": "/img/item/bag-1.jpg",
+        "type": "bag",
+        "season": ["summer"],
+        "sale": null
+    },
+    {
+        "id": 2,
+        "name": "Морская походная сумка",
+        "price_ru": 7500,
+        "collection_id": 1,
+        "image": "/img/item/bag-2.jpg",
+        "type": "bag",
+        "season": ["summer"],
+        "sale": null
+    },
+    {
+        "id": 3,
+        "name": "Клубничная походная сумка",
+        "price_ru": 4500,
+        "collection_id": 2,
+        "image": "/img/item/bag-3.jpg",
+        "type": "bag",
+        "season": ["summer", "demi"],
+        "sale": null
+    },
+    {
+        "id": 4,
+        "name": "Рыба-хранитель рун",
+        "price_ru": 2500,
+        "collection_id": 1,
+        "image": "/img/item/bag-4.jpg",
+        "type": "bag",
+        "season": ["summer", "demi"],
+        "sale": null
+    },
+    {
+        "id": 5,
+        "name": "Лимонный походный мешочек",
+        "price_ru": 4000,
+        "collection_id": 2,
+        "image": "/img/item/bag-5.jpg",
+        "type": "bag",
+        "season": ["summer", "demi"],
+        "sale": null
+    },
+    {
+        "id": 6,
+        "name": "Чепец 'Манул'",
+        "price_ru": 7500,
+        "collection_id": 2,
+        "image": "/img/item/hat-1.jpg",
+        "type": "hat",
+        "season": ["winter"],
+        "sale": null
+    },
+    {
+        "id": 7,
+        "name": "Просая деревенская кура",
+        "price_ru": 4500,
+        "collection_id": 2,
+        "image": "/img/item/hat-2.jpg",
+        "type": "hat",
+        "season": ["winter", "demi"],
+        "sale": null
+    },
+    {
+        "id": 8,
+        "name": "Мухоморная панама",
+        "price_ru": 4500,
+        "collection_id": 3,
+        "image": "/img/item/hat-3.jpg",
+        "type": "hat",
+        "season": ["winter", "demi"],
+        "sale": null
+    }
+]

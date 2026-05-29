@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
-    <title>Главная страница</title>
+    <title>Stitched Worlds</title>
 
     <script src="/js/jquery-4.0.0.min.js"></script> <!--Подключение библиотек-->
     <script src="/js/FadeAnimation.js"></script>
@@ -69,7 +69,7 @@
             <h1>Stitched Worlds</h1>
             <p>Вязаные артефакты, найденные в фейских планах,<br>
             прибрежных деревнях и лесах...</p>
-            <button onclick="window.location.href='https://yandex.ru'">К коллекциям</button>   
+            <button onclick="window.location.href='#order'">Создать артефакт</button>   
         </div>
     </div>
     <script src="/js/SlideShow.js"></script>
@@ -81,16 +81,24 @@
         </div>
     </section>
 
+    <!-- КОЛЛЕКЦИИ -->
     <section id="collections" class="collections container fade">
-        <h2>Миры лавки</h2>
+        <div id="collectionsGrid" class="collectionsGrid"></div>
+        <button id="showMoreBtn" class="showMore">
+            Показать ещё
+        </button>
     </section>
+    <script src="/js/collectionCartsRender.js"></script>
 
+    <!-- НОВЫЕ ТОВАРЫ -->
     <section id="new" class="new container fade">
-        <h2>Новые находки</h2>
+        <h2>New Finds</h2>
     </section>
 
+    <!-- ОТЗЫВЫ -->
     <section id="reviews" class="reviews container fade">
-        <h2>Записки странников</h2>
+        <h2>Traveler’s Notes</h2>
+        <h3 class="reviews-title">Отмечай лавку в социальных сетях и здесь появится твоя история!</h3>
         <!-- ГАЛЕРЕЯ -->
         <div class="gallery">
             <div class="gallery-track" id="track"></div>
@@ -100,24 +108,28 @@
             </div>
         </div>
     </section>
+    <script src="/js/typingText.js"></script>
     <script src="/js/ReviewsGallery.js"></script>
 
+    <!-- СДЕЛАТЬ ЗАКАЗ -->
     <section id="order" class="order container fade">
-        <h2>Создать артефакт на заказ</h2>
+        <h2>Commission a Custom Artifact</h2>
     </section>
-
+<!-- 
+     СОЦСЕТИ
     <section id="socials" class="socials container fade">
-        <h2>Хроники торговца</h2>
+        <h2>Merchant’s Chronicles</h2>
     </section>
 
+    ПОДПИСКА НА РАССЫЛКУ
     <section id="subscribe" class="subscribe container fade">
-        <h2>Получать вести из лавки</h2>
-    </section>
+        <h2>Receive Tidings from the Shop</h2>
+    </section> -->
 
-    <footer class="footer container fade">
-        <h2>Подвал</h2>
+    <!-- ПОДВАЛ -->
+    <footer class="footer container">
+        <p>@ Stitched Worlds</p>
     </footer>
-
 
 </body>
 </html>

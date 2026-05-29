@@ -1,16 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const reviews = [
-        { img: "/img/items/hat-1.jpg", nick: "@moon_fairy", text: "Хочу всё" },
-        { img: "/img/items/hat-2.jpg", nick: "@moon_fairy", text: "Хочу всё" },
-        { img: "/img/items/hat-3.jpg", nick: "@moon_fairy", text: "Хочу всё" },
-        { img: "/img/items/bag-2.jpg", nick: "@moon_fairy", text: "Потрясающе" },
-        { img: "/img/items/bag-4.jpg", nick: "@moon_fairy", text: "Потрясающе" },
-        { img: "/img/items/bag-5.jpg", nick: "@moon_fairy", text: "Потрясающе" },
-        { img: "/img/items/bag-6.jpg", nick: "@moon_fairy", text: "Потрясающе" }
-    ];
-
+    let reviews = [];
     const track = document.getElementById("track");
     let index = 0;
+
+    //загружаем json
+    function loadReviews(){
+        $.getJSON('/json/reviews.json', function(data){ //jquery
+            console.log("ЗАГРУЖЕННЫЕ ДАННЫЕ:", data);
+            reviews = data;
+            
+            render();
+            update();
+        });
+    }
 
     function render() {
         track.innerHTML = ""; //удаляем содержимое чтоб карточки не дублировались
@@ -19,12 +21,25 @@ document.addEventListener("DOMContentLoaded", () => {
             const card = document.createElement("div");
             card.classList.add("card"); //добавляем класс диву
 
-            card.innerHTML = 
-            `<img src="${item.img}">
+            card.innerHTML =
+            `<a href="${item.instagram}" target="_blank" class="review-link">
+
+                <img src="${item.img}" alt="${item.nick}">
+
                 <div class="card-content">
                     <div class="nick">${item.nick}</div>
                     <div class="text">${item.text}</div>
-                </div>`;
+                </div>
+
+            </a>`;
+
+
+            // card.innerHTML = 
+            // `<img src="${item.img}">
+            //     <div class="card-content">
+            //         <div class="nick">${item.nick}</div>
+            //         <div class="text">${item.text}</div>
+            //     </div>`;
 
             track.appendChild(card);
         });
@@ -58,6 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    render();
-    update();
+    loadReviews();
+
 });

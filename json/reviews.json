@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "img": "/img/items/hat-1.jpg",
+        "nick": "@moon_fairy",
+        "text": "Хочу всё",
+        "instagram": "https://instagram.com/moon_fairy"
+    },
+    {
+        "id": 2,
+        "img": "/img/items/hat-2.jpg",
+        "nick": "@forest.witch",
+        "text": "Очень атмосферно",
+        "instagram": "https://instagram.com/forest.witch"
+    },
+    {
+        "id": 3,
+        "img": "/img/items/hat-3.jpg",
+        "nick": "@mossy.cat",
+        "text": "Это буквально магия",
+        "instagram": "https://instagram.com/mossy.cat"
+    },
+    {
+        "id": 4,
+        "img": "/img/items/bag-2.jpg",
+        "nick": "@night.faerie",
+        "text": "Потрясающе",
+        "instagram": "https://instagram.com/night.faerie"
+    },
+    {
+        "id": 5,
+        "img": "/img/items/bag-4.jpg",
+        "nick": "@owl.garden",
+        "text": "Очень красиво упаковано",
+        "instagram": "https://instagram.com/owl.garden"
+    },
+    {
+        "id": 6,
+        "img": "/img/items/bag-5.jpg",
+        "nick": "@fern.moon",
+        "text": "Теперь хочу всю коллекцию",
+        "instagram": "https://instagram.com/fern.moon"
+    },
+    {
+        "id": 7,
+        "img": "/img/items/bag-6.jpg",
+        "nick": "@luna.branch",
+        "text": "Выглядит даже лучше чем на фото",
+        "instagram": "https://instagram.com/luna.branch"
+    }
+]
