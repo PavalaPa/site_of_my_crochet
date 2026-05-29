@@ -4,7 +4,7 @@
         "name": "Старинная рыболовная сеть",
         "price_ru": 6500,
         "collection_id": 1,
-        "image": "/img/item/bag-1.jpg",
+        "image": "/img/items/bag-1.png",
         "type": "bag",
         "season": ["summer"],
         "sale": null
@@ -14,7 +14,7 @@
         "name": "Морская походная сумка",
         "price_ru": 7500,
         "collection_id": 1,
-        "image": "/img/item/bag-2.jpg",
+        "image": "/img/items/bag-2.png",
         "type": "bag",
         "season": ["summer"],
         "sale": null
@@ -24,7 +24,7 @@
         "name": "Клубничная походная сумка",
         "price_ru": 4500,
         "collection_id": 2,
-        "image": "/img/item/bag-3.jpg",
+        "image": "/img/items/bag-3.png",
         "type": "bag",
         "season": ["summer", "demi"],
         "sale": null
@@ -34,7 +34,7 @@
         "name": "Рыба-хранитель рун",
         "price_ru": 2500,
         "collection_id": 1,
-        "image": "/img/item/bag-4.jpg",
+        "image": "/img/items/bag-4.png",
         "type": "bag",
         "season": ["summer", "demi"],
         "sale": null
@@ -44,7 +44,7 @@
         "name": "Лимонный походный мешочек",
         "price_ru": 4000,
         "collection_id": 2,
-        "image": "/img/item/bag-5.jpg",
+        "image": "/img/items/bag-5.png",
         "type": "bag",
         "season": ["summer", "demi"],
         "sale": null
@@ -54,7 +54,7 @@
         "name": "Чепец 'Манул'",
         "price_ru": 7500,
         "collection_id": 2,
-        "image": "/img/item/hat-1.jpg",
+        "image": "/img/items/hat-1.png",
         "type": "hat",
         "season": ["winter"],
         "sale": null
@@ -64,7 +64,7 @@
         "name": "Просая деревенская кура",
         "price_ru": 4500,
         "collection_id": 2,
-        "image": "/img/item/hat-2.jpg",
+        "image": "/img/items/hat-2.png",
         "type": "hat",
         "season": ["winter", "demi"],
         "sale": null
@@ -74,7 +74,28 @@
         "name": "Мухоморная панама",
         "price_ru": 4500,
         "collection_id": 3,
-        "image": "/img/item/hat-3.jpg",
+        "image": "/img/items/hat-3.png",
+        "type": "hat",
+        "season": ["winter", "demi"],
+        "sale": null
+    }
+    ,
+    {
+        "id": 9,
+        "name": "Цветочные митенки",
+        "price_ru": 4500,
+        "collection_id": 2,
+        "image": "/img/items/mittens-1.png",
+        "type": "hat",
+        "season": ["winter", "demi"],
+        "sale": null
+    },
+    {
+        "id": 10,
+        "name": "Цветочная шапка с ушками",
+        "price_ru": 4500,
+        "collection_id": 2,
+        "image": "/img/items/hat-4.png",
         "type": "hat",
         "season": ["winter", "demi"],
         "sale": null
