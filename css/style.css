@@ -479,7 +479,7 @@ body, html {
     grid-column: span 4; /*эл охватывает 4 колонки*/
 
     background: white;
-    border-radius: 12px;
+    border-radius: 2px;
     overflow: hidden; /*то что не поместилось в контейнер скрыто*/
 
     transition: all 0.3s ease;
@@ -536,10 +536,60 @@ body, html {
 
 
 
-
+/* ЗАКАЗ */
 .order {
-    background: #E8EEF3;
+    background: #F6F1E8;
     min-height: 85vh;
+
+}
+.form-container{
+    grid-column: 4 / 10;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    padding: 40px;
+
+    input, textarea{
+        width: 100%;
+        padding: 18px 22px;
+        border: none;
+        background: #F6F1E8;
+        color: #193A03;
+        font-family: "Playfair Display", serif;
+        font-size: 16pt;
+        box-sizing: border-box;
+
+        transition: 0.3s;
+    }
+    textarea{
+        min-height: 220px;
+        resize: vertical; /*чтобы можно было тянуть только вертикально*/
+    }
+    #sendButton{
+        align-self: center;
+        padding: 14px 95px;
+        border: 2px solid #193A03;
+        border-radius: 50px;
+
+        background: #F6F1E8;
+        color: #193A03;
+
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16pt;
+        cursor: pointer;
+
+        transition: 0.3s;
+    }
+    #sendButton:hover{
+        background: #193A03;
+        color: #F6F1E8;
+        transform: scale(1.04);
+    }
 }
 
 

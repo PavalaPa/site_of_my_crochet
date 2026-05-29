@@ -7,7 +7,18 @@
     <title>Stitched Worlds</title>
 
     <script src="/js/jquery-4.0.0.min.js"></script> <!--Подключение библиотек-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "2AulMl-ab1Lxkz9KZ",
+        });
+    })();
+    </script>
     <script src="/js/FadeAnimation.js"></script>
+    <script src="/js/favorites.js"></script>
     <link rel="stylesheet" href="/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +58,6 @@
                 <button class="dropbtn"><img src="/img/icons/favorite.svg" alt="fav"></button>
                 <div class="dropdown-content" id="favoritesMenu">
                     <a href="/img/items/bag-1.jpg">Сумочка 1</a>
-                    <a href="/img/items/bag-2.jpg">Сумочка 2</a>
                 </div>
             </div>
         </div>
@@ -119,14 +129,14 @@
     <!-- СДЕЛАТЬ ЗАКАЗ -->
     <section id="order" class="order container fade">
         <h2>Commission a Custom Artifact</h2>
-        <div class="form-container">
+        <form id="orderForm" class="form-container">
             <input type="text" id="name" name="name" placeholder="Имя" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
             <textarea id="comment" name="comment" placeholder="Опишите индивидуальный заказ или обавьте правки ко внешнему виду уже существующих товаров (прежде добавьте их в избранное!), при необходимости напишите свои параметры." required></textarea>
-            <div class="g-recaptcha hidden" data-sitekey="6LfAo3cqAAAAAGDT0p1woOXFHUZ0SQA4IYmd33JV"></div>
-            <button id="sendButton" type="button" onclick="sendMail()">ОТПРАВИТЬ</button>
-        </div>
+            <button id="sendButton" type="submit">Отправить</button>
+        </form>
     </section>
+    <script src="/js/sentMail.js"></script>
 
 <!-- 
      СОЦСЕТИ

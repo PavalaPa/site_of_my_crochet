@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!--Подключение библиотек-->
+    <script src="/js/productPage.js"></script>
+    <script src="/js/favorites.js"></script>
+    <link rel="stylesheet" href="/css/style_product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--МЕНЮ-->
+    <header class="menu">
+        <div class="left">
+            <div class="dropdown">
+                <button class="dropbtn"><img src="/img/icons/menu.svg" alt="menu"></button>
+                <div class="dropdown-content">
+                    <a href="main_page.html#collections">Миры лавки</a>
+                    <a href="main_page.html#new">Новые находки</a>
+                    <a href="main_page.html#reviews">Записки странников</a>
+                    <a href="main_page.html#order">Создать артефакт на заказ</a>
+                    <!-- <a href="/main_page.html#socials">Хроники торговца</a>
+                    <a href="/main_page.html#subscribe">Получать вести из лавки</a> -->
+                </div>
+            </div>
+
+            <!--ЯЗЫК-->
+            <div class="dropdown">
+                <button class="dropbtn">ru</button>
+
+                <div class="dropdown-content">
+                    <a href="main_page_en.html">en</a>
+                    <a href="main_page_zh.html">zh</a>
+                </div>
+            </div>
+        </div>
+
+        <div  class="right">
+            <!--ЛЮБИМОЕ-->
+            <div class="dropdown">
+                <button class="dropbtn"><img src="/img/icons/favorite.svg" alt="fav"></button>
+                <div class="dropdown-content" id="favoritesMenu">
+                    <a href="/img/items/bag-1.jpg">Сумочка 1</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="/js/menu.js"></script>
+
+    <!-- НАЗАД -->
+    <a href="main_page.html" class="backButton">
+        ← Назад
+    </a>
+    <!-- ПРОДУКТ -->
+    <section class="productPage container">
+        <div class="productGallery">
+            <img id="mainImage" class="mainImage" src="/img/items/bag-2.jpg" alt="product">
+
+            <!-- МИНИ ГАЛЕРЕЯ -->
+            <div id="gallery" class="gallery">
+                <img src="/img/items/bag-2.jpg" alt="">
+                <img src="/img/items/bag-2.jpg" alt="">
+                <img src="/img/items/bag-2.jpg" alt="">
+                <img src="/img/items/bag-2.jpg" alt="">
+                <img src="/img/items/bag-2.jpg" alt="">
+                <img src="/img/items/bag-2.jpg" alt="">
+                <img src="/img/items/bag-2.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="productInfo">
+            <div class="flex">
+                <h1 id="productName">Морская походная сумка</h1>
+                <img id="favImg" class="favImg" src="/img/icons/favorite.svg" alt="favorite">
+            </div>
+            <h2 id="productPrice">7500 rub</h2>
+            <p id="productDescription">Траляляляляллляляляляллялялял</p>
+            <p id="collectionName">Траляляляляллляляляляллялялял</p>
+            <p>Состав</p>
+            <div class="seasons" id="seasons">
+                <div>Summer</div>
+                <div>Demiseason</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
