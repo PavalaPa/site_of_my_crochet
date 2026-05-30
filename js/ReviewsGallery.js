@@ -32,14 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             </a>`;
 
-
-            // card.innerHTML = 
-            // `<img src="${item.img}">
-            //     <div class="card-content">
-            //         <div class="nick">${item.nick}</div>
-            //         <div class="text">${item.text}</div>
-            //     </div>`;
-
             track.appendChild(card);
         });
     }

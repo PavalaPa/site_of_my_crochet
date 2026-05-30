@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const menu = document.getElementById("favoritesMenu");
 
-    if (!menu) return; // если на странице нет меню — ничего не делаем
+    if (!menu) return; // если на странице нет меню - ничего не делаем
 
     function renderFavorites() {
 
