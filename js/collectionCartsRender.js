@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="cardContent">
                         <p>${col.description}</p>
                     </div>
-                </div>
-                <button onclick="window.location.href=${col.link} class="BtnGo">Перейти</button>
+                </div>  
+                <button onclick="window.location.href='${col.link}'" class="BtnGo">Перейти</button>
             `;
 
             grid.appendChild(card);

@@ -4,7 +4,7 @@
         "name": "Coastal Village",
         "description": "Вещи, найденные среди рыболовных сетей, морской соли и брехливых историй",
         "image": "/img/collections/Coastal_Village.jpg",
-        "link": "",
+        "link": "main_page.html#new",
         "products": [1, 2, 4]
     },
     {
@@ -12,33 +12,15 @@
         "name": "Fae Realm",
         "description": "Артефакты из волшебного плана фей. Мягкие, нежные и немного нереальные",
         "image": "/img/collections/Fae_Realm.jpg",
-        "link": "",
+        "link": "main_page.html#new",
         "products": [3, 5, 6, 7]
     },
     {
         "id": 3,
         "name": "Goblin Woods",
         "description": "Грубоватые, слегка хаотичные, но теплые одеяния для странников, ценящих приключения",
-        "image": "/img/collections/Fae_Realm.jpg",
-        "link": "",
-        "products": [8]
-    }
-    ,
-    {
-        "id": 4,
-        "name": "Goblin Woods",
-        "description": "Атмосфера тёмных лесов, грибов и северных троп",
-        "image": "/img/collections/Fae_Realm.jpg",
-        "link": "",
-        "products": [8]
-    }
-    ,
-    {
-        "id": 5,
-        "name": "Goblin Woods",
-        "description": "Атмосфера тёмных лесов, грибов и северных троп",
-        "image": "/img/collections/Fae_Realm.jpg",
-        "link": "",
+        "image": "/img/main_image1.jpg",
+        "link": "main_page.html#new",
         "products": [8]
     }
 ]
